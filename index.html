@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container pt-2">
+        <h1 class="pb-3 text-muted text-center">Bookmarker</h1> 
+        <hr>
+
+        <div class="form-project text-center my-5 py-4">
+            <h2> Bookmark your favorite sites </h2>
+            <div class="form-group mx-5">
+                <label class="text-center my-2 font-weight-bold">Site Name</label>
+                <input id="name" type="text" class="form-control" placeholder="bookmark Name">
+            </div>
+            <div class="form-group mx-5">
+                <label class="text-center my-2 font-weight-bold">Site URL</label>
+                <input id="url" type="text" class="form-control" placeholder="website URL">
+            </div>
+       <button id="addBtn" disabled class="btn btn-primary my-4">Submit</button>
+            </div>
+
+<input onkeyup="search(this.value)" class="my-3 form-control" placeholder="Search by bookmark name">
+<div class="output">
+    <table class="table">
+        <thead>
+            <th class="text-capitalize">index</th>
+            <th class="text-capitalize">Website Name</th>
+            <th class="text-capitalize">Visit</th>
+            <th class="text-capitalize">Update</th>
+            <th class="text-capitalize">Delete</th>
+        </thead>
+        <tbody id="tableBody">
+             
+        </tbody>
+    </table>
+</div>
+<hr>
+<footer>
+    <h6 class="text-muted text-center">@ 2019 Bookmarker Inc.</h6>
+</footer>
+</div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
